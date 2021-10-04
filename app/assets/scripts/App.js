@@ -1,4 +1,6 @@
 import "../style/styles.css";
-if (module.hot) {
-    module.hot.accept();
-}
+import MobileMenu from "./modules/MoblileMenu";
+let mobileMenu = new MobileMenu();
+// if (module.hot) {
+//     module.hot.accept();
+// }

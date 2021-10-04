@@ -4,6 +4,7 @@ module.exports = {
         require('postcss-simple-vars'),
         require('autoprefixer'),
         require('postcss-import'),
-        require('postcss-mixins')
+        require('postcss-mixins'),
+        require('postcss-hexrgba')
     ]
 }
