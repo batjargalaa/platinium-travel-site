@@ -5,6 +5,18 @@ import Modal from "./modules/Modal";
 import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
 import ClientArea from "./modules/ClientArea";
+// end reacttai holbootoi code baina
+import react from "react";
+import reactDOM from "react-dom";
+function MyReactComponent() {
+    return (
+        <div>
+            <h1>This is react component</h1>
+            <p>React is awesome</p>
+        </div>
+    )
+}
+reactDOM.render(<MyReactComponent />, document.querySelector("#my-react-example"))
 new ClientArea();
 let mobileMenu = new MobileMenu();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);

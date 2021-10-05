@@ -22,7 +22,17 @@ let config = {
     plugins: pages, //[new HtmlWebpackPlugin({ filename: 'index.html', template: './app/index.html' })],
     module: {
         rules: [
-            cssConfig
+            cssConfig,
+            {
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-react', '@babel/preset-env']
+                    }
+                }
+            }
         ]
     }
 }
@@ -54,16 +64,6 @@ if (currenTask == 'dev') {
 
 }
 if (currenTask == 'build') {
-    config.module.rules.push({
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-env']
-            }
-        }
-    })
     cssConfig.use.unshift(MiniCssExtractPlugin.loader);
     //postCSSPlugins.push(require('cssnano'));
     config.output = {
