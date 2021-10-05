@@ -8,14 +8,8 @@ import ClientArea from "./modules/ClientArea";
 // end reacttai holbootoi code baina
 import React from "react";
 import ReactDOM from "react-dom";
-function MyReactComponent() {
-    return (
-        <div>
-            <h1>This is react component</h1>
-            <p>React is awesome</p>
-        </div>
-    )
-}
+// uurdsiin bichij ugsun react componentiig import hiih
+import MyReactComponent from "./modules/MyReactComponent";
 ReactDOM.render(<MyReactComponent />, document.querySelector("#my-react-example"))
 new ClientArea();
 let mobileMenu = new MobileMenu();
