@@ -6,8 +6,8 @@ import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
 import ClientArea from "./modules/ClientArea";
 // end reacttai holbootoi code baina
-import react from "react";
-import reactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 function MyReactComponent() {
     return (
         <div>
@@ -16,7 +16,7 @@ function MyReactComponent() {
         </div>
     )
 }
-reactDOM.render(<MyReactComponent />, document.querySelector("#my-react-example"))
+ReactDOM.render(<MyReactComponent />, document.querySelector("#my-react-example"))
 new ClientArea();
 let mobileMenu = new MobileMenu();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
