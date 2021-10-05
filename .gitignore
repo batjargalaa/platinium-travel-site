@@ -1,4 +1,5 @@
 *.log
+docs
 Thumbs.db
 .cache
 node_modules
